@@ -132,7 +132,7 @@ export default {
                 <div class="flex justify-between items-center">
                     <label for="title" class="font-bold my-2 text-font"><slot name="title">{{ __( 'No title Provided' ) }}</slot></label>
                     <div for="title" class="text-sm my-2 text-font">
-                        <a v-if="returnUrl" :href="returnUrl" class="rounded-full border ns-inset-button error px-2 py-1">Return</a>
+                        <a v-if="returnUrl" :href="returnUrl" class="rounded-full border ns-inset-button error px-2 py-1">{{ __( 'Return' ) }}</a>
                     </div>
                 </div>
                 <div :class="form.main.disabled ? 'disabled' : form.main.errors.length > 0 ? 'error' : 'info'" class="input-group flex border-2 rounded overflow-hidden">

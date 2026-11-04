@@ -12,7 +12,7 @@
             <div class="absolute left-0 top-0 sm:relative w-screen zoom-out-entrance anim-duration-300 h-[80vh] sm:w-[17.5em] sm:h-108 flex flex-row-reverse">
                 <div class="z-50 sm:rounded-lg shadow-xl h-full w-full md:mt-2 overflow-y-hidden flex flex-col">
                     <div @click="visible = false" class="sm:hidden p-2 cursor-pointer flex items-center justify-center border-b border-gray-200">
-                        <h3 class="font-semibold hover:text-info-primary">Close</h3>
+                        <h3 class="font-semibold hover:text-info-primary">{{ __( 'Close' ) }}</h3>
                     </div>
                     <div class="overflow-y-auto flex flex-col flex-auto">
                         <div :key="notification.id" v-for="notification of notifications" class="notification-card notice border-b">

@@ -22,7 +22,7 @@
         </div>
         <div class="flex flex-wrap -mx-3 text-font">
             <div class="px-3 w-full print:w-1/2 md:w-1/2">
-                <h3 class="font-semibold text-xl border-b-2 border-blue-400 py-2 mb-2">Provider</h3>
+                <h3 class="font-semibold text-xl border-b-2 border-blue-400 py-2 mb-2">{{ __( 'Provider' ) }}</h3>
                 <ul>
                     <li class="py-1"><span class="font-bold">{{ __( 'First Name' ) }}: </span> {{ $procurement->provider->first_name }}</li>
                     <li class="py-1"><span class="font-bold">{{ __( 'Last Name' ) }}: </span>{{ $procurement->provider->last_name ?? __( 'N/A' ) }}</li>
@@ -33,7 +33,7 @@
                 </ul>
             </div>
             <div class="px-3 w-full print:w-1/2 md:w-1/2">
-                <h3 class="font-semibold text-xl border-b-2 border-blue-400 py-2 mb-2">Store</h3>
+                <h3 class="font-semibold text-xl border-b-2 border-blue-400 py-2 mb-2">{{ __( 'Store' ) }}</h3>
                 <ul>
                     <li class="py-1"><span class="font-bold">{{ __( 'Name' ) }}: </span> {{ $options->get( 'ns_store_name' ) }}</li>
                     <li class="py-1"><span class="font-bold">{{ __( 'Address' ) }}: </span>{{ $options->get( 'ns_store_address' ) ?? __( 'N/A' ) }}</li>

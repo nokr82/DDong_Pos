@@ -13,10 +13,10 @@
             submit-method="PUT"
             submit-url="{{ url( '/api/crud/ns.customers-groups/' . $group->id ) }}"
             src="{{ url( '/api/crud/ns.customers-groups/form-config/' . $group->id ) }}">
-            <template v-slot:title>Group Name</template>
-            <template v-slot:save>Update Group</template>
-            <template v-slot:error-required>The following field is required</template>
-            <template v-slot:error-invalid-form>The form is not valid. Please check it and try again</template>
+            <template v-slot:title>{{ __( 'Group Name' ) }}</template>
+            <template v-slot:save>{{ __( 'Update Group' ) }}</template>
+            <template v-slot:error-required>{{ __( 'The following field is required' ) }}</template>
+            <template v-slot:error-invalid-form>{{ __( 'The form is not valid. Please check it and try again' ) }}</template>
         </ns-crud-form>
     </div>
 </div>

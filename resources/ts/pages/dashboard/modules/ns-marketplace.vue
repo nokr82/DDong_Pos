@@ -86,7 +86,7 @@
                         id="marketplace-search"
                         v-model="searchQuery"
                         type="text"
-                        placeholder="Search marketplace..."
+                        :placeholder="__( 'Search marketplace...' )"
                         class="h-12 w-full rounded-[18px] border-2 border-input-edge bg-background px-11 pr-4 text-sm text-fontcolor outline-none transition-colors placeholder:text-fontcolor-soft focus:border-primary/60 focus:ring-4 focus:ring-primary/10"
                     >
                 </div>

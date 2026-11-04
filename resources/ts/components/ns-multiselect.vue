@@ -21,7 +21,7 @@
             <div class="h-0 z-10" style="margin-top: -2px; margin-bottom: 2px;" v-if="showPanel" :class="showPanel ? 'shadow' : ''">
                 <div class="ns-dropdown shadow border rounded-b-md">
                     <div class="search border-b border-input-option-hover">
-                        <input @keypress.enter="selectAvailableOptionIfPossible()" v-model="search" class="p-2 w-full bg-transparent text-fontcolor outline-hidden" placeholder="Search">
+                        <input @keypress.enter="selectAvailableOptionIfPossible()" v-model="search" class="p-2 w-full bg-transparent text-fontcolor outline-hidden" :placeholder="__( 'Search' )">
                     </div>
                     <div class="h-40 overflow-y-auto">
                         <div @click="addOption( option )" :key="index" v-for="(option, index) of _filtredOptions" :class="option.selected ? 'selected' : ''" class="option p-2 flex justify-between cursor-pointer">

@@ -19,7 +19,7 @@
                         ref="searchField" 
                         @keydown.enter="attemptToChoose()"
                         v-model="searchCustomerValue"
-                        placeholder="Search Customer" 
+                        :placeholder="__( 'Search Customer' )" 
                         type="text" 
                         class="outline-hidden w-full p-2">
                 </div>
